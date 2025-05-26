@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@font-face{
+    font-family: DMSans;
+    src: url("./assets/fonts/DMSans-Regular.ttf")
+}
+
+@theme {
+  --color-primaryText: #232360;
+  --color-primaryButton: #31437A;
+  --color-primaryButton-80: #3B4C80;
+  --color-lightGray: #EFF1FB;
+  --color-activeBlue: #1EA7FF;
+  --color-sideBar: #E3E6F3;
+  --color-iconColor: #5F6388;
+  --color-iconBgColor:#F3F7FD;
+  --color-iconChart: #8D98A9;
+  --color-greenText: #299702;
+  --color-grayFilter: #C2C8E2;
+  
+
+  --font-dmsans: DMSans, "sans-serif";
+}
+
+.activeHeader{
+    color: #1EA7FF;
+    border-bottom: 3px solid #1EA7FF;
+}
+
+.infoStyle-item{
+    @apply flex-1 flex justify-center font-dmsans;
+}
+
+.infoStyle-contain{
+    @apply w-[60%] flex flex-col  gap-4 justify-center;
+}
+
+.infoStyle-title{
+    @apply font-bold text-lg text-primaryButton text-center;
+}
+
+.infoStyle-content{
+    @apply w-full text-balance text-center text-black text-[1rem];
+}
+
+.cardDashboardStyle{
+    @apply flex-1 bg-white rounded-2xl;
+}
+
+.tableHead{
+    @apply !px-4 !py-3 !border text-center;
+}
